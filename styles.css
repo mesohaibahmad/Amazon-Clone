@@ -1,0 +1,243 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E3E6E6;
+}
+body img{
+    object-fit: cover;
+}
+
+header{
+    
+    color: white;
+}
+#main-header{
+    background-color: #131921;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 15px;
+    font-weight: 700;
+    
+}
+.main-header-content{
+    padding: 10px 12px;
+    height: 60px;
+}
+.fa-cart-shopping{
+    font-size: 30px;
+}
+.main-header-content:hover{
+    border: 1px solid white;
+    padding: 9px 11px;
+}
+ #search-area{
+    width: 50%;
+    
+    display: flex;
+    
+}
+#category, #search-bar, .search-sbl{
+    height: 40px;
+    
+}
+#category{
+    text-align: center;
+    width: 12%;
+    border: none;
+    background-color: #E6E6E6; 
+    border-radius: 5px 0px 0px 5px;
+}
+#search-bar{
+    width: 80%;
+    border: none;
+    border-left: 1px solid grey;
+    padding-left: 10px;
+}
+#search-area .search-sbl{
+    width: 8%;
+font-size: 22px;
+color: #131921;
+padding: 8px 16px;
+background-color: #F3A847;
+border-radius: 0px 5px 5px 0px;
+}
+#services{
+    height: 40px;
+    background-color: #232F3E;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#services a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 13.5px 10px ;
+}
+#services a:hover{
+    border: 1px solid white;
+    padding: 12.5px 9px;
+}
+#hero{
+    
+    position: relative;
+}
+#hero img{
+    width: 98.75vw ;
+}
+#hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Adjust this value to change the height of the opacity */
+    background: linear-gradient(to bottom, rgba(227, 230, 230, 0), rgba(227, 230, 230, 1));
+  }
+  #main-container{
+    position: absolute;
+    top: 60%;
+  }
+  #categories-thumbnail-section{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .categories-thumbnail{
+    width: 320px;
+    height: 450px;
+    background-color: white;
+    
+  }
+  .categories-thumbnail h2{
+    padding: 20px 20px;
+    font-size: 21px;
+  }
+  .cat-th-img{
+    width: 100%;
+    margin: auto;
+    height: 320px;
+    
+  }
+  .cat-th-img img{
+    width: 100%;
+
+  }
+  .four-by-2 .cat-th-img div{
+    max-width: 130px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+.four-by-2 img{
+width: 100%;
+height: 120px;
+  }
+  .categories-thumbnail span{
+    font-size: 12px;
+  }
+ .cat-th-sm{
+    padding: 20px 20px;
+    
+    text-decoration: none;
+  }
+  .categories-thumbnail a{
+    text-decoration: none;
+    color: #65afbf;
+    font-size: 13.5px;
+  }
+.one-by-1 img{
+    width: 280px;
+    height: 320px;
+    margin-left: 20px;
+}
+
+.four-by-1 :where(.cat-th-img){
+    width: 280px;
+    margin-left: 20px;
+}
+.four-by-1 :where(.cat-th-img) div:first-child{
+    width: 100%;
+
+}
+.four-by-1 :where(.cat-th-img) div:nth-child(n+2){
+    width: 90px;
+    display: inline-block;
+}
+.four-by-1 :where(.cat-th-img) div:nth-child(n+2) img{
+    height: 90px;
+}
+.product-slider{
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    height: 280px;
+}
+.ps-images{
+font-display: flex;
+height: 210px;
+overflow: scroll;
+
+}
+.ps-images a{
+    margin-left: 3px;
+}
+.price-ps{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    height: 380px;
+}
+.pr-ps-container{
+    margin-top: 7px;
+    display: flex;
+}
+.pr-pro{
+    width: 240px;
+    margin-right: 10px;
+}
+.price-ps img{
+width: 100%;
+height: 200px;
+
+}
+.price-ps .off,.price-ps .limited, 
+.price-ps .pr-list,.price-ps .desc{
+    font-size: 12px;
+} 
+.price-ps .off{
+    background-color: #CC0C39;
+    color: white;
+    width: 55px;
+    padding: 6px 6px;
+    display: inline-block;
+}
+.price-ps .limited{
+ color: #CC0C39;
+ width: 150px;
+ display: inline-block;
+ padding: 2px 10px;
+}
+.price-ps .price{
+    display: inline-block;
+    font-size: 20px;
+}
+.price-ps .pr-list{
+    display: inline-block;
+}
+
+.price-ps .desc{
+    height: 12px;
+    overflow: hidden;
+}
+.pr-pro div:nth-child(n){
+    margin-bottom: 5px;
+}
